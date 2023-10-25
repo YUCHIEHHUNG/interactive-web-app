@@ -7,6 +7,7 @@ const image = document.querySelector(".icon");
 async function getWeather(city){
 let result = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=59962cf7f4f23dda900ed8cd9ebc4d72&&units=metric`);
 
+//display invalid city name
 if(result.status == 404){
   document.querySelector(".error").style.display = "block";
 } else{
