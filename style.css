@@ -4,21 +4,21 @@
   box-sizing: border-box;
 }
 
-body{
-  background-color:#fff;
-}
-.container{
-  width: 450px;
-  background: rgb(152, 206, 221);
-  padding: 30px;
-  margin: 150px auto;
-  border-radius: 20px;
-  align-items: center;
+
+/*navbar*/
+.title{
+  font-size: 30px;
+  color: #fff;
+  margin-right: 400px;
+  font-weight: bold;
 }
 
-/*search bar*/
+.navbar{
+  background-color:rgba(152, 206, 221, 0.6);
+  height: 8rem;
+}
+
 .search-bar{
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,20 +27,20 @@ body{
 .search-bar input{
   border: 0;
   outline: 0;
-  padding: 18px 22px;
+  padding: 15px 22px;
   flex: 1;
-  margin-right: 20px;
+  margin-right: 35px;
   border-radius: 30px;
-  font-size: 25px;
-  font-weight: 100px;
-  background-color: aliceblue;
-  color: rgb(55, 53, 53);
+  font-size: 20px;
+  font-weight: 80px;
+  background-color:#fff;
+  color: rgba(55, 53, 53, 0.854);
 }
 
 .search-bar button{
   border: 0;
   outline: 0;
-  background-color:aliceblue;
+  background-color:#fff;
   width: 52px;
   height: 52px;
   border-radius: 50%;
@@ -53,6 +53,15 @@ body{
 }
 
 /*weather section*/
+
+.weather{
+  max-width: 500px;
+  background: rgba(152, 206, 221, 0.5);
+  padding: 30px;
+  margin: 150px auto;
+  border-radius: 20px;
+  align-items: center;
+}
 
 .weather-degree{
   display: flex;
@@ -86,10 +95,15 @@ body{
 .col{
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .humidity, .wind{
   font-size: 27px;
+}
+
+.humidityPercentage{
+  justify-content: center;
 }
 
 .error{
