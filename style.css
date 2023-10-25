@@ -112,3 +112,25 @@
   margin-left: 20px;
   display: none;
 }
+
+/*responsive*/
+
+@media screen and (width < 768px) {
+ .weather{
+  width: 350px;
+ }
+
+ .weather h1{
+  font-size: 50px;
+  font-weight: 500px;
+}
+
+.weather h2{
+  font-size: 30px;
+  font-weight: 400px;
+}
+.humidity, .wind{
+  font-size: 20px;
+}
+
+}
